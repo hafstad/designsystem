@@ -8,6 +8,7 @@ import { ListShowcaseComponent } from './list-showcase/list-showcase.component';
 import { ShowcaseComponent } from './showcase.component';
 import { DoughnutChartShowcaseComponent } from './doughnut-chart-showcase/doughnut-chart-showcase.component';
 import { ShowcaseRoutingModule } from './showcase-routing.module';
+import { TabbarShowcaseComponent } from './tabbar-showcase/tabbar-showcase.component';
 
 export const COMPONENT_IMPORTS: any[] = [
     ExamplesModule,
@@ -15,13 +16,14 @@ export const COMPONENT_IMPORTS: any[] = [
 ];
 
 export const COMPONENT_EXPORTS: any[] = [
-    CardShowcaseComponent,
-    ButtonShowcaseComponent,
-    ListShowcaseComponent,
-    GridShowcaseComponent,
     AvatarShowcaseComponent,
+    ButtonShowcaseComponent,
+    CardShowcaseComponent,
     DoughnutChartShowcaseComponent,
-    FontsShowcaseComponent
+    FontsShowcaseComponent,
+    GridShowcaseComponent,
+    ListShowcaseComponent,
+    TabbarShowcaseComponent
 ];
 
 export const COMPONENT_DECLARATIONS: any[] = [
