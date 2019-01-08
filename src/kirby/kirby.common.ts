@@ -9,19 +9,21 @@ import { ListComponent, ListItemDirective, ListHeaderDirective } from './compone
 import { ComponentLoaderDirective } from './components/shared/component-loader.directive';
 import { ListItemComponent } from './components/list/list-item/list-item.component';
 import { ListHeaderComponent } from './components/list/list-header/list-header.component';
+import { TabbarComponent } from './components/tabbar/tabbar.component';
 
 export const declarations = [
-  CardComponent,
-  CardHeaderComponent,
-  CardFooterComponent,
-  ButtonComponent,
-  ListComponent,
-  ListItemDirective,
-  ListItemComponent,
-  ListHeaderDirective,
-  ListHeaderComponent,
-  IconComponent,
-  GridComponent,
-  ComponentLoaderDirective,
   AvatarComponent,
+  ButtonComponent,
+  CardComponent,
+  CardFooterComponent,
+  CardHeaderComponent,
+  ComponentLoaderDirective,
+  GridComponent,
+  IconComponent,
+  ListComponent,
+  ListHeaderComponent,
+  ListHeaderDirective,
+  ListItemComponent,
+  ListItemDirective,
+  TabbarComponent
 ];
