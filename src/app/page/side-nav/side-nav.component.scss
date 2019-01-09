@@ -90,6 +90,10 @@ $page-gutter: 1rem;
     }
   }
 
+  .is-selected > &-header {
+    font-weight: bold;
+  }
+
   &--sub &__item {
     padding-left: 4.25rem; //Magic... :)
   }
