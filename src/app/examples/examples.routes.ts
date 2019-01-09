@@ -5,6 +5,7 @@ import { CardExampleComponent } from './card-example/card-example.component';
 import { GridExampleComponent } from './grid-example/grid-example.component';
 import { ListExampleComponent } from './list-example/list-example.component';
 import { FontsExampleComponent } from './fonts-example/fonts-example.component';
+import { TabbarExampleComponent } from './tabbar-example/tabbar-example.component';
 
 export const routes: Routes = [
     {
@@ -34,6 +35,9 @@ export const routes: Routes = [
     {
         path: 'fonts',
         component: FontsExampleComponent
+    },
+    {
+        path: 'tabbar',
+        component: TabbarExampleComponent
     }
-
 ];
