@@ -5,13 +5,14 @@
   flex-direction: row;
   justify-content: space-between;
   height: size("xl");
+  padding: 0 size("gutter-small");
+  background-color: var(--kirby-surface);
+  color: var(--kirby-on-surface);
+  box-shadow: 0 4px 4px -3px rgba(0, 0, 0, 0.2);
+
   @include media(">=medium") {
     justify-content: flex-end;
   }  
-  padding-left: size("gutter");
-  padding-right: size("gutter");
-  background-color: var(--kirby-surface);
-  box-shadow: 0 0 2px 0 rgba(0,0,0,0.2);
 }
 
 .tabbar-item {
@@ -22,10 +23,26 @@
   text-decoration: none; 
   font-size: font-size("xs");
   height: 100%;
+  color: currentColor;
+  padding: 0 size("gutter");
+  margin: 0 size("gutter-small");
+
+  &.is-active {
+    color: var(--kirby-primary);
+    position: relative;
+    &:after {
+      content: "";
+      background-color: var(--kirby-primary);
+      height: 3px;
+      border-radius: 4px 4px 0 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
   
   @include media(">=medium") {
-    margin-right: size("gutter-small");
-    margin-left: size("gutter-small");
     flex-direction: row;
   }         
 }
@@ -33,5 +50,7 @@
 kirby-icon {
   width: 1.5rem;
   height: 1.5rem;
-  margin: 0 size("xs");
+  @include media(">=medium") {
+    margin: 0 size("xs") 0 0;
+  }
 }
