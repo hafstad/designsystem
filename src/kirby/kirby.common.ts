@@ -25,5 +25,5 @@ export const declarations = [
   ListHeaderDirective,
   ListItemComponent,
   ListItemDirective,
-  TabbarComponent
+  TabbarComponent,
 ];
