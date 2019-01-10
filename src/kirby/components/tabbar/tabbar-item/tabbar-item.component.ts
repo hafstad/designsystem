@@ -9,7 +9,7 @@ export class TabbarItemComponent implements OnInit {
 
   @Input() isActive: boolean;
   @Input() icon: string;
-  @Input() activeIcon: string;
+  @Input() activeIcon?: string;
 
   constructor() { }
 
