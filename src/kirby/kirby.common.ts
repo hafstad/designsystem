@@ -10,6 +10,7 @@ import { ComponentLoaderDirective } from './components/shared/component-loader.d
 import { ListItemComponent } from './components/list/list-item/list-item.component';
 import { ListHeaderComponent } from './components/list/list-header/list-header.component';
 import { TabbarComponent } from './components/tabbar/tabbar.component';
+import { TabbarItemComponent } from './components/tabbar/tabbar-item/tabbar-item.component';
 
 export const declarations = [
   AvatarComponent,
@@ -26,4 +27,5 @@ export const declarations = [
   ListItemComponent,
   ListItemDirective,
   TabbarComponent,
+  TabbarItemComponent
 ];

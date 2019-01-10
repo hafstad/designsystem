@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'kirby-tabbar',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tabbar.component.scss']
 })
 export class TabbarComponent implements OnInit {
+
+  @Input() items: any[];
 
   constructor() { }
 
