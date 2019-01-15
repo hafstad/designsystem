@@ -1,12 +1,6 @@
-<!-- <ul class="tabbar">
-  <li *ngFor="let item of items" (click)="onMenuClick(item)">
-    <ng-container *ngTemplateOutlet="tabbarItemTemplate; context: {$implicit: item}">
-    </ng-container>
-  </li>
-</ul> -->
-
 <FlexboxLayout col="0" row="1" class="tabbar">
   <FlexboxLayout *ngFor="let item of items" class="tabbar-item" (tap)="onMenuClick(item)">
     <ng-container *ngTemplateOutlet="tabbarItemTemplate; context: {$implicit: item}"></ng-container>
   </FlexboxLayout>
 </FlexboxLayout>
+  
