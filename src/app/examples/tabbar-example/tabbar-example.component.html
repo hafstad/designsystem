@@ -1,1 +1,3 @@
-<kirby-tabbar [items]="menuItems"></kirby-tabbar>
+<kirby-tabbar [items]="menuItems">
+  <kirby-tabbar-item *kirbyTabbarItem="let item" [item]="item" (click)="onClick(item)"></kirby-tabbar-item>
+</kirby-tabbar>

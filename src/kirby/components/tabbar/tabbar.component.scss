@@ -1,14 +1,23 @@
 @import "../../../kirby/scss/web-imports";
 
+:host {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 .tabbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: size("xl");
+  list-style: none;
   padding: 0 size("gutter-small");
   background-color: var(--kirby-surface);
   color: var(--kirby-on-surface);
   box-shadow: 0 4px 4px -3px rgba(0, 0, 0, 0.2);
+  margin: 0;
 
   @include media(">=medium") {
     justify-content: flex-end;

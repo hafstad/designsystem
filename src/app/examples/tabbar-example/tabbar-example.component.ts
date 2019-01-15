@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class TabbarExampleComponent implements OnInit {
 
   menuItems = [
-    {id: 1, title: 'For dig', icon: 'Foryou', activeIcon: 'meh'},
-    {id: 2, title: 'Indbakke', icon: 'Message', activeIcon: 'meh'},
-    {id: 3, title: 'Novo Nordisk A/S B', icon: 'Menu', activeIcon: 'meh'}
+    {id: 1, title: 'For dig', icon: 'Foryou', activeIcon: 'ForyouActive', active: false},
+    {id: 2, title: 'Indbakke', icon: 'Message', activeIcon: 'MessageActive', active: false},
+    {id: 3, title: 'Menu', icon: 'Menu', activeIcon: 'MenuActive', active: true}
   ];
 
   constructor() { }
@@ -19,7 +19,7 @@ export class TabbarExampleComponent implements OnInit {
   }
 
   onClick(item) {
-    console.log('Clicked: ' + item);
+    console.log('Clicked (Example event handler): ' + item.title);
   }
 
 }

@@ -1,9 +1,6 @@
-<div class="tabbar">
-  <a href="#" class="tabbar-item" [ngClass]="{'is-active': isActive}" *ngFor="let item of items">
-    <kirby-icon [name]="item.icon"></kirby-icon>
-    item.title
-  </a>
-  <!-- <kirby-tabbar-item isActive="true" label="Til dig" icon="Foryou" activeIcon="ForyouActive"></kirby-tabbar-item>
-  <kirby-tabbar-item label="Indbakke" icon="Message" activeIcon="MessageActive"></kirby-tabbar-item>
-  <kirby-tabbar-item label="Menu" icon="Menu" activeIcon="MenuActive"></kirby-tabbar-item> -->
-</div>
+<ul class="tabbar">
+  <li *ngFor="let item of items" (click)="onMenuClick(item)">
+    <ng-container *ngTemplateOutlet="tabbarItemTemplate; context: {$implicit: item}">
+    </ng-container>
+  </li>
+</ul>

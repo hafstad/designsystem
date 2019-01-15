@@ -6,12 +6,11 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./tabbar-item.component.scss']
 })
 export class TabbarItemComponent implements OnInit {
+  @Input() item: any;
+  @Input() something: number;
 
-  @Input() isActive: boolean;
-  @Input() icon: string;
-  @Input() activeIcon?: string;
-
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

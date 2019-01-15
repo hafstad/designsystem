@@ -1,4 +1,5 @@
-<a href="#" class="tabbar-item" [ngClass]="{'is-active': isActive}">
-  <kirby-icon [name]="icon"></kirby-icon>
-  Menu
+<a href="javascript:void(0)" class="tabbar-item" [ngClass]="{'is-active': item.active}">
+  <span>{{activeItemId}}</span>
+  <kirby-icon [name]="item.active ? item.activeIcon : item.icon"></kirby-icon>
+  {{item.title}}
 </a>
