@@ -1,26 +1,11 @@
 @import '../../../kirby/scss/native-imports';
 
-/* Add mobile styles for the component here.  */
-
 .tabbar {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
   height: size("xl");
-  background-color: get-color("primary");
+  background-color: get-color("kirby-surface");
   border-top-width: 1;
-  border-top-color: get-color;
-}
-
-.tabbar-item { 
-  flex-direction: column;
-  font-size: font-size("xs");
-  width: 33%;
-  align-items: center;
-  justify-content: center;
-
-  Image {
-    width: 24;
-    height: 24;
-  }
+  border-top-color: get-color("kirby-disabled");
 }

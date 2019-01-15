@@ -1,16 +1,12 @@
-
+<!-- <ul class="tabbar">
+  <li *ngFor="let item of items" (click)="onMenuClick(item)">
+    <ng-container *ngTemplateOutlet="tabbarItemTemplate; context: {$implicit: item}">
+    </ng-container>
+  </li>
+</ul> -->
 
 <FlexboxLayout col="0" row="1" class="tabbar">
-  <FlexboxLayout class="tabbar-item" backgroundColor="red" (tap)="onButtonTap()">
-    <Image src="~/assets/icons/sprites/png/Foryou.png"></Image>
-    <Label text="For dig"></Label>
-  </FlexboxLayout>
-  <FlexboxLayout class="tabbar-item" (tap)="onButtonTap()">
-    <Image src="~/assets/icons/sprites/png/Foryou.png"></Image>
-    <Label text="Indbakke"></Label>
-  </FlexboxLayout>
-  <FlexboxLayout class="tabbar-item" (tap)="onButtonTap()">
-    <Image src="~/assets/icons/sprites/png/Foryou.png"></Image>
-    <Label text="Menu"></Label>
+  <FlexboxLayout *ngFor="let item of items" class="tabbar-item" (tap)="onMenuClick(item)">
+    <ng-container *ngTemplateOutlet="tabbarItemTemplate; context: {$implicit: item}"></ng-container>
   </FlexboxLayout>
 </FlexboxLayout>

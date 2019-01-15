@@ -1,1 +1,18 @@
-/* Add mobile styles for the component here.  */
+@import '../../../../kirby/scss/native-imports';
+
+.tabbar-item { 
+  flex-direction: column;
+  font-size: font-size("xs");
+  width: 33%;
+  align-items: center;
+  justify-content: center;
+
+  Image {
+    width: 24;
+    height: 24;
+  }
+
+  &.is-active {
+    color: get-color(kirby-primary);
+  }  
+}
