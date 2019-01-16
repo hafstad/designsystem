@@ -1,4 +1,4 @@
-<FlexboxLayout col="0" row="1" class="tabbar">
+<FlexboxLayout class="tabbar">
   <FlexboxLayout *ngFor="let item of items" class="tabbar-item" (tap)="onMenuClick(item)">
     <ng-container *ngTemplateOutlet="tabbarItemTemplate; context: {$implicit: item}"></ng-container>
   </FlexboxLayout>

@@ -1,25 +1,25 @@
-<GridLayout orientation="vertical" columns="*" rows="*,auto">
-  <ScrollView sdkExampleTitle sdkToggleNavButton row="0">
-    <GridLayout class="m-15" rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto">
-      <Label class="h3 m-5" height="50" row="0" text="Title 1"></Label>
-      <Label class="h3 m-5" height="50" row="1" text="Title 2"></Label>
-      <Label class="h3 m-5" height="50" row="2" text="Title 3"></Label>
-      <Label class="h3 m-5" height="50" row="3" text="Title 4"></Label>
-      <Label class="h3 m-5" height="50" row="4" text="Title 5"></Label>
-      <Label class="h3 m-5" height="50" row="5" text="Title 6"></Label>
-      <Label class="h3 m-5" height="50" row="6" text="Title 7"></Label>
-      <Label class="h3 m-5" height="50" row="7" text="Title 8"></Label>
-      <Label class="h3 m-5" height="50" row="8" text="Title 9"></Label>
-      <Label class="h3 m-5" height="50" row="9" text="Title 10"></Label>
-      <Label class="h3 m-5" height="50" row="10" text="Title 10"></Label>
-      <Label class="h3 m-5" height="50" row="11" text="Title 11"></Label>
-      <Label class="h3 m-5" height="50" row="12" text="Title 12"></Label>
-      <Label class="h3 m-5" height="50" row="13" text="Title 13"></Label>
-      <Label class="h3 m-5" height="50" row="14" text="Title 14"></Label>
-      <Label class="h3 m-5" height="50" row="15" text="Title 15"></Label>
+<GridLayout orientation="vertical" columns="*" rows="*, auto">
+  <ScrollView row="0">
+    <GridLayout rows="auto, auto, auto, *, *">
+      <Label class="kirby-text-display" height="50" row="0" text="Tabbar i Kirby"></Label>
+      <StackLayout row="1">
+        <kirby-card>
+          <kirby-card-header [title]="'Kina menuen'" [subtitle]="'Spis her eller med hjem?'">
+          </kirby-card-header>
+          <Image src="https://baconmockup.com/300/200" height="200"></Image>
+          <kirby-card-footer>
+            <Label margin="10" text="Den er lækker, så lækker!"></Label>
+          </kirby-card-footer>
+        </kirby-card>
+      </StackLayout>
+      <Label textWrap="true" row="2" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, porro architecto totam ratione nulla quas eius modi nostrum dicta, soluta, dolore aliquid quod libero nihil quidem? Aperiam excepturi ex similique?"></Label>
+      <Label textWrap="true" row="3" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, porro architecto totam ratione nulla quas eius modi nostrum dicta, soluta, dolore aliquid quod libero nihil quidem? Aperiam excepturi ex similique?" paddingTop="30" ></Label>
+      <Label textWrap="true" row="4" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, porro architecto totam ratione nulla quas eius modi nostrum dicta, soluta, dolore aliquid quod libero nihil quidem? Aperiam excepturi ex similique?" paddingTop="30" ></Label>
     </GridLayout>
   </ScrollView>
-  <kirby-tabbar [items]="menuItems">
-    <kirby-tabbar-item *kirbyTabbarItem="let item" [item]="item" ></kirby-tabbar-item>
-  </kirby-tabbar>
-</GridLayout>
+  <StackLayout row="1">
+    <kirby-tabbar [items]="menuItems">
+      <kirby-tabbar-item *kirbyTabbarItem="let item" [item]="item" ></kirby-tabbar-item>
+    </kirby-tabbar>
+  </StackLayout>
+</GridLayout> 
