@@ -1,4 +1,4 @@
-<a href="javascript:void(0)" class="tabbar-item" [ngClass]="{'is-active': item.active}">
-  <kirby-icon [name]="item.active ? item.activeIcon : item.icon"></kirby-icon>
-  {{item.title}}
+<a href="javascript:void(0)" class="tabbar-item" [ngClass]="{'is-active': active}" (click)="onClick()">
+  <kirby-icon [name]="active ? activeIcon : icon"></kirby-icon>
+  {{title}}
 </a>

@@ -1,3 +1,7 @@
-<kirby-tabbar [items]="menuItems">
-  <kirby-tabbar-item *kirbyTabbarItem="let item" [item]="item" (click)="onClick(item)"></kirby-tabbar-item>
+<kirby-tabbar>
+  <kirby-tabbar-item linkTo="/tabbar/dummy-1" icon="Foryou" activeIcon="ForyouActive" title="For you"></kirby-tabbar-item>
+  <kirby-tabbar-item linkTo="/tabbar/dummy-2" icon="Message" activeIcon="MessageActive" title="Messages"></kirby-tabbar-item>
+  <kirby-tabbar-item popupTarget="somemenu" (tap)="doSomethingElse()" icon="Menu" activeIcon="MenuActive" title="Menu"></kirby-tabbar-item>
+  <!-- <kirby-tabbar-item *kirbyTabbarItem="let item" [item]="item" (menuClick)="onClick($event)"></kirby-tabbar-item> -->
 </kirby-tabbar>
+

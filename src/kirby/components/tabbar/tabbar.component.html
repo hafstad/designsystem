@@ -1,6 +1,7 @@
-<ul class="tabbar">
-  <li *ngFor="let item of items" (click)="onMenuClick(item)">
+<div class="tabbar">
+  <ng-content select="kirby-tabbar-item"></ng-content>
+  <!-- <li *ngFor="let item of items" (click)="onMenuClick(item)">
     <ng-container *ngTemplateOutlet="tabbarItemTemplate; context: {$implicit: item}">
     </ng-container>
-  </li>
-</ul> 
+  </li> -->
+</div> 

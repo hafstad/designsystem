@@ -19,9 +19,8 @@ export interface TabbarItem {
   styleUrls: ['./tabbar.component.scss']
 })
 export class TabbarComponent implements OnInit {
-  @Input() items: TabbarItem[];
-  @Output() menuClick = new EventEmitter();
-  @ContentChild(TabbarItemDirective, {read: TemplateRef}) tabbarItemTemplate;
+  // @Input() items: TabbarItem[];
+  // @ContentChild(TabbarItemDirective, {read: TemplateRef}) tabbarItemTemplate;
 
   constructor() {
   }
@@ -29,12 +28,12 @@ export class TabbarComponent implements OnInit {
   ngOnInit() {
   }
 
-  onMenuClick(item): void {
-    this.menuClick.emit(item);
-    const activeElm = this.items.filter(el => el.active === true);
-    activeElm.forEach(element => {
-      element.active = false;
-    });
-    item.active = true;
-  }
+
+  // onMenuClick(item): void {
+  //   const activeElm = this.items.filter(el => el.active === true);
+  //   activeElm.forEach(element => {
+  //     element.active = false;
+  //   });
+  //   item.active = true;
+  // }
 }

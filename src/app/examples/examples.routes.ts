@@ -38,6 +38,10 @@ export const routes: Routes = [
     },
     {
         path: 'tabbar',
-        component: TabbarExampleComponent
+        component: TabbarExampleComponent,
+        children: [
+            { path: 'tabbar/dummy-1'},
+            { path: 'tabbar/dummy-2'}
+          ]
     }
 ];
