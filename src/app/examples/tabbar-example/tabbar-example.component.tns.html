@@ -12,14 +12,16 @@
           </kirby-card-footer>
         </kirby-card>
       </StackLayout>
-      <Label textWrap="true" row="2" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, porro architecto totam ratione nulla quas eius modi nostrum dicta, soluta, dolore aliquid quod libero nihil quidem? Aperiam excepturi ex similique?"></Label>
-      <Label textWrap="true" row="3" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, porro architecto totam ratione nulla quas eius modi nostrum dicta, soluta, dolore aliquid quod libero nihil quidem? Aperiam excepturi ex similique?" paddingTop="30" ></Label>
+      <Label class="test" textWrap="true" row="2" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, porro architecto totam ratione nulla quas eius modi nostrum dicta, soluta, dolore aliquid quod libero nihil quidem? Aperiam excepturi ex similique?"></Label>
+      <Label class="test2" textWrap="true" row="3" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, porro architecto totam ratione nulla quas eius modi nostrum dicta, soluta, dolore aliquid quod libero nihil quidem? Aperiam excepturi ex similique?" paddingTop="30" ></Label>
       <Label textWrap="true" row="4" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, porro architecto totam ratione nulla quas eius modi nostrum dicta, soluta, dolore aliquid quod libero nihil quidem? Aperiam excepturi ex similique?" paddingTop="30" ></Label>
     </GridLayout>
   </ScrollView>
   <StackLayout row="1">
-    <kirby-tabbar [items]="menuItems">
-      <kirby-tabbar-item *kirbyTabbarItem="let item" [item]="item" ></kirby-tabbar-item>
+    <kirby-tabbar>
+      <kirby-tabbar-item linkTo="/examples/tabbar/dummy-1" icon="Foryou" activeIcon="ForyouActive" title="For you"></kirby-tabbar-item>
+      <kirby-tabbar-item linkTo="/examples/tabbar/dummy-2" icon="Message" activeIcon="MessageActive" title="Messages"></kirby-tabbar-item>
+      <kirby-tabbar-item popupTarget="somemenu" (tap)="doSomethingElse()" icon="Menu" activeIcon="MenuActive" title="Menu"></kirby-tabbar-item>
     </kirby-tabbar>
   </StackLayout>
 </GridLayout> 

@@ -1,4 +1,5 @@
-<FlexboxLayout class="tabbar-item" (tap)="onButtonTap()" [ngClass]="{'is-active': item.active}">
-  <Image [src]="item.active ? '~/assets/icons/sprites/png/' + item.activeIcon : '~/assets/icons/sprites/png/' + item.icon"></Image>
-  <Label [text]=item.title></Label>
+<FlexboxLayout class="tabbar-item" (tap)="onClick()" [ngClass]="{'is-active': active}">
+  <Image [src]="active ? '~/assets/icons/sprites/png/' + activeIcon : '~/assets/icons/sprites/png/' + icon"></Image>
+  <Label [text]=title></Label>
 </FlexboxLayout>
+ 

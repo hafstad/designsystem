@@ -1,6 +1,4 @@
 <FlexboxLayout class="tabbar">
-  <FlexboxLayout *ngFor="let item of items" class="tabbar-item" (tap)="onMenuClick(item)">
-    <ng-container *ngTemplateOutlet="tabbarItemTemplate; context: {$implicit: item}"></ng-container>
-  </FlexboxLayout>
+  <ng-content select="kirby-tabbar-item"></ng-content>
 </FlexboxLayout>
   
