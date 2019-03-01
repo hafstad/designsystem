@@ -1,6 +1,6 @@
-# Building and Testing Kirby
+# Running, Building And Testing Kirby Locally
 
-This document describes how to set up your development environment to build and test Kirby.
+This document describes how to set up your development environment to run, build and test Kirby.
 It also explains the basic mechanics of using `git`, `node`, and `npm`.
 
 * [Prerequisite Software](#prerequisite-software)
@@ -23,6 +23,14 @@ following products on your development machine:
 
 * [Node.js](http://nodejs.org), (version specified in the engines field of [`package.json`](../package.json)) which is used to run a development web server,
   run tests, and generate distributable files.
+
+* Xcode (9 or later) + Command Line Tools + Xcodeproj
+
+* CocoaPods
+
+* Python Six
+
+* Java JDK 8 + Android SDK
 
 ## Getting the Sources
 
