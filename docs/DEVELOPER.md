@@ -10,11 +10,11 @@ It also explains the basic mechanics of using `git`, `node`, and `npm`.
 * [Running Tests Locally](#running-tests-locally)
 
 See the [contribution guidelines](https://github.com/kirbydesign/designsystem/blob/master/CONTRIBUTING.md)
-if you'd like to contribute to Angular.
+if you'd like to contribute to Kirby.
 
 ## Prerequisite Software
 
-Before you can build and test Angular, you must install and configure the
+Before you can build and test Kirby, you must install and configure the
 following products on your development machine:
 
 * [Git](http://git-scm.com) and/or the **GitHub app** (for [Mac](http://mac.github.com) or
@@ -26,14 +26,14 @@ following products on your development machine:
 
 ## Getting the Sources
 
-Fork and clone the Angular repository:
+Fork and clone the Kirby repository:
 
 1. Login to your GitHub account or create one by following the instructions given
    [here](https://github.com/signup/free).
 2. [Fork](http://help.github.com/forking) the [Kirby
    repository](https://github.com/kirbydesign/designsystem).
-3. Clone your fork of the Angular repository and define an `upstream` remote pointing back to
-   the Angular repository that you forked in the first place.
+3. Clone your fork of the Kirby repository and define an `upstream` remote pointing back to
+   the Kirby repository that you forked in the first place.
 
 ```shell
 # Clone your GitHub repository:
@@ -42,7 +42,7 @@ git clone git@github.com:<github username>/designsystem.git
 # Go to the Kirby directory:
 cd designsystem
 
-# Add the main Angular repository as an upstream remote to your repository:
+# Add the main Kirby repository as an upstream remote to your repository:
 git remote add upstream https://github.com/kirbydesign/designsystem
 ```
 ## Installing NPM Modules
