@@ -53,6 +53,13 @@ cd designsystem
 # Add the main Kirby repository as an upstream remote to your repository:
 git remote add upstream https://github.com/kirbydesign/designsystem
 ```
+
+### Keeping your fork up to date
+Updating your fork from Kirby to keep up with changes
+```shell
+git pull upstream master
+```
+
 ## Installing NPM Modules
 
 Next, install the JavaScript modules needed to build and test Kirby:
