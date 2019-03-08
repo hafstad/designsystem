@@ -83,23 +83,6 @@ npm run ios
 npm run android
 ```
 
-## Building
-
-To build Kirby run:
-
-##### Web
-```shell
-npm run dist
-```
-##### iOS
-```shell
-...
-```
-##### Android
-```shell
-...
-```
-
 * Results are put in the `dist/*` folder.
 
 ## Running Tests Locally
